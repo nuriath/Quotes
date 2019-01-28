@@ -1,0 +1,31 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Quotes</h1>
+<ul>
+  <div *ngFor='let quotes of quotes;let i = index'>
+      <li appStrikethrough>{{quotes.name}}</li>
+      <button  (click)='toogleDetails(i)'>Show Details</button>
+
+      <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes'(isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
+      <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)= 'deletequotes($event,i)'></app-quotes-details>
+  </div>
+</ul>
+<div>
+<label id="auther">Auther: </label>
+<input type="text">
+</div>
+<br>
+<div>
+  <label id="newquote">New Quote: </label>
+  <input type="text">
+</div>
+<br>
+<div>
+  <label id="name">Your Name: </label>
+  <input type="text">
+</div>
+<br>
+<div>
+  <button type="submit" onclick="submit">Submit</button>
+</div>
+<router-outlet></router-outlet>
