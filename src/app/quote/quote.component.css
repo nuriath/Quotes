@@ -1,6 +1,10 @@
 .container{
-    background-color:	#CD853F;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdYAAsNOI3fQDzHvFoBzagMXXkXXyylX1_67Wr0kw78K5PdPq');
     font-size: 20px;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 h1{
     font-size: 80px;
