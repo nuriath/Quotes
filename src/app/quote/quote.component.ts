@@ -39,7 +39,7 @@ completeQuotes(isComplete,index){
 
   deleteQuote(isComplete,index){
     if (isComplete){
-        let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+        let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].quote}`)
         
         if(toDelete){
             this.quotes.splice(index,1)
