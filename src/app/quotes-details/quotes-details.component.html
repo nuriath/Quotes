@@ -1,8 +1,8 @@
 
 <p>Nuriath</p>
 <p>Author: {{quotes.author}}</p>
-<p> {{quotes.upvote}}  <button (click)="quotes.upvote= quotes.upvote+1">upvote</button></p> 
+<p> {{quotes.upvote}}  <button class="vote" (click)="quotes.upvote= quotes.upvote+1">upvote</button></p> 
 
-<p>{{quotes.downvote}} <button (click)="quotes.downvote=quotes.downvote+1">downvote</button></p>
+<p>{{quotes.downvote}} <button class="vote" (click)="quotes.downvote=quotes.downvote+1">downvote</button></p>
 <p>This Quote will be completed in {{quotes.completeDate|dateCount}} days</p>
 <button class="btn btn-danger" (click) = 'quotesComplete(true)'> Delete </button>
