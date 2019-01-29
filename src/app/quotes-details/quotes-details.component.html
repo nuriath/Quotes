@@ -3,8 +3,9 @@
 
 <p>Author</p>
 <p>Nuriath</p>
-<p>{{quote.author}}</p>
-<p> {{quote.upvote}} </p>
-<p>{{quote.downvote}}</p>
+<p>{{quotes.author}}</p>
+<p> {{quotes.upvote}}  <button (click)="quotes.upvote= quotes.upvote+1">upvote</button></p> 
+
+<p>{{quotes.downvote}} <button (click)="quotes.downvote=quotes.downvote+1">downvote</button></p>
 <p>This Quote will be completed in {{quotes.completeDate|dateCount}} days</p>
 <button class="btn btn-danger" (click) = 'quotesComplete(true)'> Delete </button>

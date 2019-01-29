@@ -9,26 +9,9 @@
 
           <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes'(isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
           
-      </div>
-    </ul>
-    <div>
-    <label id="auther">Auther: </label>
-    <input type="text">
-    </div>
-    <br>
-    <div>
-      <label id="newquote">New Quote: </label>
-      <input type="text">
-    </div>
-    <br>
-    <div>
-      <label id="name">Your Name: </label>
-      <input type="text">
-    </div>
-    <br>
-    <div>
-      <button type="submit" onclick="submit">Submit</button>
-    </div>
-
+         
 </div>
+<div class="row">
+  <app-quote-form></app-quote-form>
+</div> 
 <router-outlet></router-outlet>
