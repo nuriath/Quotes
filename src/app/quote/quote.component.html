@@ -4,7 +4,7 @@
     <h1>Quotes</h1>
     <ul>
       <div *ngFor='let quotes of quotes;let i = index'>
-          <li appStrikethrough>{{quotes.name}}</li>
+          <li appStrikethrough>{{quotes.quote}}</li>
           <button  (click)='toogleDetails(i)'>Show Details</button>
 
           <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes'(isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
