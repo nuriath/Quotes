@@ -8,6 +8,7 @@
           <button class="show1" (click)='toogleDetails(i)'>Show Details</button>
 
           <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes'(isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
+          <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)= 'deleteQuotes($event,i)'></app-quotes-details>
           
          
 </div>
