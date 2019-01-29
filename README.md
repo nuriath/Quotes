@@ -16,12 +16,16 @@ This is a Quote application, where you can read, it have the upvote and Downvote
 
 Run `ng generate component component-name` to generate a new component. 
 
-##Technologies used
+## Technologies used
 
 Google chrome
 Visual studio code
 
-##relative link:
+## Contact
+
+E-mail:mnuriath@gmail.com
+
+## Relative link:
 
 [a relative link] (other_file.md)
 
